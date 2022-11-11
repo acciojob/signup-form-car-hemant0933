@@ -9,7 +9,7 @@
 
 <body>
 	
-	<form style="text-align: center; font-size: larger;">
+	<form action="/action_page.php" method="get">
 		<div>
 		<label for="name">Name:&nbsp; </label>
 		<input type ="text" id="name" value="name"><br><br>
@@ -22,18 +22,16 @@
 		<input type="radio" name="gender" value="male">Male
 		<input type="radio" name="gender" value="female">Female<br><br></div>
 	<div>
-		<label for="car">Car Brands:&nbsp;</label>
+		<label for="cars">Car Brands:&nbsp;</label>
 		<select>
-			<option value="car" disabled selected>Select option</option>
+			<option value="cars" disabled selected>Select option</option>
 			<option id="cars">BMW</option>
 			<option id="cars">Audi</option>
 			<option id="cars">Mercedez</option>
 			<option id="cars">Volkswegan</option>
 		</select><br><br></div>
 	<div>
-		<label for="age">
-			Age:&nbsp;
-		</label>
+		<label for="age">Age:&nbsp;</label>
 		<input type="text" id="age" value="age"><br><br></div>
 	<div>
 		<label for="dob">DOB:&nbsp;</label>
@@ -42,7 +40,7 @@
 		<label for="password">Password:&nbsp;</label>
 		<input type="password" id="password" value="password"><br><br></div>
 	<div>
-		<input type="submit" value="submit"></div>
+		<input type="submit" value="Submit"></div>
 
 
 	</form>
