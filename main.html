@@ -6,44 +6,61 @@
   </head>
 
   <body>
-    <form action="/action_page.php" method="get">
+    <h1>Signup Form</h1>
+    <form method="post">
       <div>
-        <label for="name">Name:&nbsp; </label>
-        <input type="text" id="name" value="name" /><br /><br />
+        <label for="name">Name:&nbsp;</label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter your name" required
+        /><br><br>
       </div>
       <div>
         <label for="email">Email:&nbsp;</label>
-        <input type="text" id="email" value="email" /><br /><br />
+        <input
+          type="text"
+          id="email"
+          placeholder="Enter email" required
+        /><br><br>
       </div>
       <div>
         <label for="gender">Gender:&nbsp;</label>
-        <input type="radio" name="gender" value="male" />Male
-        <input type="radio" name="gender" value="female" />Female<br /><br />
+        <input type="radio" id="gender" name="gender">Male
+        <input type="radio" id="gender" name="gender">Female<br><br>
       </div>
       <div>
         <label for="cars">Car Brands:&nbsp;</label>
-        <select>
-          <option value="cars" disabled selected>Select option</option>
-          <option id="cars">BMW</option>
-          <option id="cars">Audi</option>
-          <option id="cars">Mercedez</option>
-          <option id="cars">Volkswegan</option></select
-        ><br /><br />
+        <select id="cars">
+          <option class="cars" disabled selected>Select option</option>
+          <option class="cars" name="BMW">BMW</option>
+          <option class="cars" name="Audi">Audi</option>
+          <option class="cars" name="Mercedez">Mercedez</option>
+          <option class="cars" name="Volkswegan">Volkswegan</option></select
+        ><br><br>
       </div>
       <div>
         <label for="age">Age:&nbsp;</label>
-        <input type="text" id="age" value="age" /><br /><br />
+        <input
+          type="text"
+          id="age"
+          placeholder="enter age" required
+        /><br><br>
       </div>
       <div>
         <label for="dob">DOB:&nbsp;</label>
-        <input type="date" id="dob" value="dob" /><br /><br />
+        <input type="date" id="dob" required /><br><br>
       </div>
       <div>
         <label for="password">Password:&nbsp;</label>
-        <input type="password" id="password" value="password" /><br /><br />
+        <input
+          type="password"
+          id="password"
+          placeholder="enter password" required
+        /><br><br>
       </div>
       <div>
-        <input type="submit" value="Submit" />
+        <button>Submit</button>
       </div>
     </form>
     <!-- the entire body must be written by student -->
