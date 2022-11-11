@@ -4,9 +4,62 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		div{
+		
+			background-color: gainsboro;
+			border-radius: 10%;
+			/* width: 50%; */
+			margin-left: 30pc;
+			margin-right: 30pc;
+			margin-top: 5pc;
+
+		}
+		h1{
+			text-align: center;
+			font-size: 90px;
+			background-color: whitesmoke;
+		}
+		body{
+			background-color: rgb(235, 16, 16);
+		}
+	</style>
 </head>
 
 <body>
+	<div>
+	<h1>Cars Dekho...</h1></div>
+	<div>
+	<form style="text-align: center; font-size: larger;">
+		<label for="name">Name:&nbsp; </label>
+		<input type ="text" id="name" value="name"><br><br>
+
+		<label for="email">Email:&nbsp;</label>
+		<input type="text" id="email" value="email"><br><br>
+		<label for="gender">Gender:&nbsp;</label>
+		<input type="radio" name="gender" value="male">Male
+		<input type="radio" name="gender" value="female">Female<br><br>
+		<label for="car">Car Brands:&nbsp;</label>
+		<select>
+			<option value="car" disabled selected>Select option</option>
+			<option id="cars">BMW</option>
+			<option id="cars">Audi</option>
+			<option id="cars">Mercedez</option>
+			<option id="cars">Volkswegan</option>
+		</select><br><br>
+		<label for="age">
+			Age:&nbsp;
+		</label>
+		<input type="text" id="age" value="age"><br><br>
+		<label for="dob">DOB:&nbsp;</label>
+		<input type="date" id="dob" value="dob"><br><br>
+		<label for="password">Password:&nbsp;</label>
+		<input type="password" id="password" value="password"><br><br>
+		<input type="submit" value="submit">
+
+
+	</form>
+</div>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
